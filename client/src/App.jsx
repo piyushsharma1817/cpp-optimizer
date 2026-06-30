@@ -19,7 +19,7 @@ function App() {
     setLoading(true);
     setError(null);
     try {
-      const res = await axios.post('https://cpp-optimizer-41da.onrender.com', { code });
+      const res = await axios.post('https://cpp-optimizer-41da.onrender.com/api/analyze', { code });
       setFindings(res.data.findings || []);
     } catch (err) {
       console.error(err);
