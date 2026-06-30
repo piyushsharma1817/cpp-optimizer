@@ -1,5 +1,5 @@
 const { detectUnnecessaryVectorMaxTracker } = require('./vectorMaxTracker');
-const { detectBinarySearchBoundaryIssues } = require('./binarySearchBoundary');
+const { detectBinarySearchBoundaryIssues } = require('./BinarySearchBoundary');
 const { detectUnnecessaryHelperFunction } = require('./helperFunctionInline');
 
 module.exports = {
