@@ -7,7 +7,6 @@ router.post('/analyze', async (req, res) => {
   try {
     const { code } = req.body;
     if (!code) return res.status(400).json({ error: 'No code provided' });
-
     const findings = analyzeCode(code);
     const explained = await explainFindings(findings, code);
     res.json({ findings: explained });
